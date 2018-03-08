@@ -1,0 +1,6 @@
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree\bin\Debug\AVLTree.exe.config
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree\bin\Debug\AVLTree.exe
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree\bin\Debug\AVLTree.pdb
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree\obj\Debug\AVLTree.csproj.CoreCompileInputs.cache
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree\obj\Debug\AVLTree.exe
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree\obj\Debug\AVLTree.pdb

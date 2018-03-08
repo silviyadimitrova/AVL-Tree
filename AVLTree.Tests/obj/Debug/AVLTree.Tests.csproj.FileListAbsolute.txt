@@ -1,0 +1,10 @@
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\bin\Debug\AVLTree.Tests.dll
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\bin\Debug\AVLTree.Tests.pdb
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\bin\Debug\AVLTree.exe
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\bin\Debug\AVLTree.pdb
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\bin\Debug\AVLTree.exe.config
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\obj\Debug\AVLTree.Tests.csprojResolveAssemblyReference.cache
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\obj\Debug\AVLTree.Tests.csproj.CoreCompileInputs.cache
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\obj\Debug\AVLTree.Tests.dll
+D:\Software Engineering\SOFTUNI\Module IV. Структури от данни\5. AA-TREES AND AVL TREES & ROPE AND TRIE\5.1 AA-TREES AND AVL TREES\AVLTree\AVLTree.Tests\obj\Debug\AVLTree.Tests.pdb
