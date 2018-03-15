@@ -38,6 +38,55 @@ public class AVL<T> where T : IComparable<T>
 		return node;
 	}
 
+	public static void UpdateHeight(Node<T> node)
+	{
+		node.Height = Math.Max(Height(node.Left), Height(node.Right)) + 1;
+	}
+
+	public static int Height(Node<T> node)
+	{
+		if (node == null)
+			return 0;
+
+		return node.Height;
+	}
+
+	private static Node<T> Balance(Node<T> node)
+	{
+		int balance = Height(node.Left) - Height(node.Right);
+
+		// 1. if tree is right-heavy
+		if (balance < -1)
+		{
+			balance = Height(node.Right.Left) - Height(node.Right.Right);
+
+			// 1.1. if right.right is heavier than right.left => do right rotation
+			if (balance <= 0)
+				return RotateLeft(node);
+
+			// 1.2. else if right.left is heavier than right.right => do right-left rotation
+			node.Right = RotateRight(node.Right);
+
+			return RotateLeft(node);
+		}
+
+		// 2. else if tree is left-heavy
+		if (balance > 1)
+		{
+			balance = Height(node.Left.Left) - Height(node.Left.Right);
+
+			// 2.1. if left.left is heavier than left.right => do right rotation
+			if (balance > 0)
+				return RotateRight(node);
+
+			// 2.2. else if left.right is heavier than left.left => do left-right rotation
+			node.Left = RotateLeft(node.Left);
+			return RotateRight(node);
+		}
+
+		return node;
+	}
+
 	public bool Contains(T item)
 	{
 		var node = this.Search(this.root, item);
@@ -75,19 +124,6 @@ public class AVL<T> where T : IComparable<T>
 		this.EachInOrder(node.Right, action);
 	}
 
-	public static int Height(Node<T> node)
-	{
-		if (node == null)
-			return 0;
-
-		return node.Height;
-	}
-
-	public static void UpdateHeight(Node<T> node)
-	{
-		node.Height = Math.Max(Height(node.Left), Height(node.Right)) + 1;
-	}
-
 	private static Node<T> RotateLeft(Node<T> node)
 	{
 		var right = node.Right;
@@ -110,41 +146,5 @@ public class AVL<T> where T : IComparable<T>
 		UpdateHeight(left);
 
 		return left;
-	}
-
-	private static Node<T> Balance(Node<T> node)
-	{
-		int balance = Height(node.Left) - Height(node.Right);
-
-		// 1. if tree is right-heavy
-		if (balance < -1)
-		{
-			balance = Height(node.Right.Left) - Height(node.Right.Right);
-
-			// 1.1. if right.right is heavier than right.left => do right rotation
-			if (balance <= 0)
-				return RotateLeft(node);
-
-			// 1.2. else if right.left is heavier than right.right => do right-left rotation
-			node.Right = RotateRight(node.Right);
-
-			return RotateLeft(node);
-		}
-
-		// 2. else if tree is left-heavy
-		if (balance > 1)
-		{
-			balance = Height(node.Left.Left) - Height(node.Left.Right);
-
-			// 2.1. if left.left is heavier than left.right => do right rotation
-			if (balance > 0)
-				return RotateRight(node);
-
-			// 2.2. else if left.right is heavier than left.left => do left-right rotation
-			node.Left = RotateLeft(node.Left);
-			return RotateRight(node);
-		}
-
-		return node;
 	}
 }
