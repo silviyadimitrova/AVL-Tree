@@ -87,43 +87,6 @@ public class AVL<T> where T : IComparable<T>
 		return node;
 	}
 
-	public bool Contains(T item)
-	{
-		var node = this.Search(this.root, item);
-		return node != null;
-	}
-
-	public void EachInOrder(Action<T> action)
-	{
-		this.EachInOrder(this.root, action);
-	}
-
-	private Node<T> Search(Node<T> node, T item)
-	{
-		if (node == null)
-			return null;
-
-		int cmp = item.CompareTo(node.Value);
-
-		if (cmp < 0)
-			return Search(node.Left, item);
-
-		if (cmp > 0)
-			return Search(node.Right, item);
-
-		return node;
-	}
-
-	private void EachInOrder(Node<T> node, Action<T> action)
-	{
-		if (node == null)
-			return;
-
-		this.EachInOrder(node.Left, action);
-		action(node.Value);
-		this.EachInOrder(node.Right, action);
-	}
-
 	private static Node<T> RotateLeft(Node<T> node)
 	{
 		var right = node.Right;
@@ -146,5 +109,42 @@ public class AVL<T> where T : IComparable<T>
 		UpdateHeight(left);
 
 		return left;
+	}
+
+	public void EachInOrder(Action<T> action)
+	{
+		this.EachInOrder(this.root, action);
+	}
+
+	private void EachInOrder(Node<T> node, Action<T> action)
+	{
+		if (node == null)
+			return;
+
+		this.EachInOrder(node.Left, action);
+		action(node.Value);
+		this.EachInOrder(node.Right, action);
+	}
+
+	public bool Contains(T item)
+	{
+		var node = this.Search(this.root, item);
+		return node != null;
+	}
+
+	private Node<T> Search(Node<T> node, T item)
+	{
+		if (node == null)
+			return null;
+
+		int cmp = item.CompareTo(node.Value);
+
+		if (cmp < 0)
+			return Search(node.Left, item);
+
+		if (cmp > 0)
+			return Search(node.Right, item);
+
+		return node;
 	}
 }
